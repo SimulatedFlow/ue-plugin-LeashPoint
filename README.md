@@ -1,0 +1,19 @@
+# LeashPoint
+
+Aggro leash, disengage and return for Unreal Engine 5.8.
+
+An enemy that never gives up is a bug, and an enemy that gives up and immediately starts again is a
+worse one. LeashPoint is the small set of rules that decides when a fight is over.
+
+* The leash is measured from the enemy's HOME, not from the target
+* The leash radius is held a fixed distance beyond the aggro radius, so the boundary cannot flicker
+* A re-acquire delay covers the walk home
+* The lost-sight timer resets on every sighting instead of accumulating
+* An enemy will not start a chase it would have to abandon a step later
+* A pack gives up together; healing on the way back is a setting
+* Every rule is a pure function the component and the tests both call
+
+Documentation: https://wiki.teufel-engineering.com/en/LeashPoint/documentation
+Support: teufelsilvan@gmail.com
+
+Unreal Engine 5.8 - Win64 - one runtime C++ module - no third-party code - full source included.

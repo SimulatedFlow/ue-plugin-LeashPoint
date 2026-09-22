@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"EngineVersion": "5.8.0",
+	"FriendlyName": "LeashPoint - Aggro Leash, Disengage & Return",
+	"Description": "An enemy that never gives up is a bug, and an enemy that gives up and immediately starts again is a worse one. LeashPoint is the small set of rules that decides when a fight is over: the leash is measured from the enemy's HOME, not from the player, so a player who keeps running cannot drag a guard across the level; the leash radius is held a fixed distance beyond the aggro radius, so the boundary cannot flicker between chasing and returning; a re-acquire delay covers the walk home, so stepping near a returning enemy does not snap it back; the lost-sight timer resets on every sighting instead of accumulating across glimpses; and an enemy will not start a chase it would have to abandon a step later. A pack gives up together, because half a pack returning is worse than none. Healing on the way home is a setting, not a hardcoded assumption. Every rule is a pure function the component and the tests both call.",
+	"Category": "AI",
+	"CreatedBy": "Silvan Teufel",
+	"CreatedByURL": "https://silvan.teufel-engineering.com",
+	"DocsURL": "https://wiki.teufel-engineering.com/en/LeashPoint/documentation",
+	"SupportURL": "mailto:teufelsilvan@gmail.com",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "LeashPoint",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}
